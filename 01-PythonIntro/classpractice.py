@@ -80,19 +80,42 @@
 # for i in range(5):
 #     print(i)
 
-def addEvenOnly(num1, num2):
-    """
-    INPUT: Two numbers
-    OUTPUT: False if both numbers are not even,
-    the sum if both numbers ar even
-    """
-    if (num1 % 2 != 0) or (num2 % 2 != 0):
-        return False
-    else:
-        return num1+num2
+# def addEvenOnly(num1, num2):
+#     """
+#     INPUT: Two numbers
+#     OUTPUT: False if both numbers are not even,
+#     the sum if both numbers ar even
+#     """
+#     if (num1 % 2 != 0) or (num2 % 2 != 0):
+#         return False
+#     else:
+#         return num1+num2
 
 
-x = addEvenOnly(1, 2)
-y = addEvenOnly(2, 2)
-print(x)
-print(y)
+# x = addEvenOnly(1, 2)
+# y = addEvenOnly(2, 2)
+# print(x)
+# print(y)
+
+# import random
+# digits = list(range(10))
+# random.shuffle(digits)
+# print(digits[:3])
+
+# guess = input("What is your guess? ")
+# print(guess)
+
+x = 50
+
+
+def func():
+    global x
+    print('This function is now using the global x!')
+    print('Because of global x is: ', x)
+    x = 2
+    print('Ran func(), changed global x to', x)
+
+
+print('Before calling func(), x is: ', x)
+func()
+print('Value of x (outside of func()) is: ', x)
